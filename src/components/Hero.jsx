@@ -72,7 +72,7 @@ const Hero = () => {
           transition={{ ease: "easeOut", duration: 1 }}
           className=" flex w-[50%] items-center justify-center"
         >
-          <img className="" src="/arlene.png" />
+          <img className="" src="/hi-b.JPG" />
         </motion.div>
       </div>
     </div>
