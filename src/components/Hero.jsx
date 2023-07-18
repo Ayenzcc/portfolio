@@ -1,5 +1,5 @@
 import React from "react";
-import Typed from "react-typed";
+// import Typed from "react-typed";
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -37,13 +37,13 @@ const Hero = () => {
               animate={{ x: 0, opacity: 1 }}
               transition={{ ease: "easeOut", duration: 1 }}
             >
-              <Typed
+              {/* <Typed
                 className="md:text-5xl sm:text-4xl text-xl font-bold pl-2"
                 strings={["POGI", "GWAPO", "SHEESH", "Ayenz pogi"]}
                 typeSpeed={120}
                 backSpeed={130}
                 loop
-              />
+              /> */}
             </motion.div>
           </div>
           <motion.button
