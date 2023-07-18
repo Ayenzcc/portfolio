@@ -16,7 +16,7 @@ const Proj = () => {
     console.log("Element is in view: ", isInView);
   }, [isInView]);
   return (
-    <div ref={ref} className="w-full py-[10rem] px-4 bg-[#121212]">
+    <div id="skills" ref={ref} className="w-full py-[10rem] px-4 bg-[#121212]">
       {isInView && (
         <motion.div
           initial={{ x: -50, opacity: 0 }}

@@ -13,7 +13,9 @@ const Navbar = () => {
         <h1 className="w-full text-3xl font-bold text-[#00df9a]">LOGO.</h1>
         <ul className="hidden md:flex">
           <li className="p-4 font-bold">Home</li>
-          <li className="p-4 font-bold">Skills</li>
+          <a href="#skills" className="p-4 font-bold">
+            Skills
+          </a>
           <li className="p-4 font-bold">Projects</li>
           <li className="p-4 font-bold">About</li>
           <li className="p-4 font-bold">Contact</li>
