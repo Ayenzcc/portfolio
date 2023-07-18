@@ -35,7 +35,12 @@ const Navbar = () => {
           </h1>
           <ul className="p-4 uppercase">
             <li className="p-4 border-b border-gray-600 font-bold">Home</li>
-            <li className="p-4 border-b border-gray-600 font-bold">Skills</li>
+            <a
+              href="#skills"
+              className="p-4 border-b border-gray-600 font-bold"
+            >
+              Skills
+            </a>
             <li className="p-4 border-b border-gray-600 font-bold">Projects</li>
             <li className="p-4 border-b border-gray-600 font-bold">About</li>
             <li className="p-4 font-bold">Contact</li>
