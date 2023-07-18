@@ -1,5 +1,5 @@
 import React from "react";
-// import Typed from "react-typed";
+import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -37,13 +37,23 @@ const Hero = () => {
               animate={{ x: 0, opacity: 1 }}
               transition={{ ease: "easeOut", duration: 1 }}
             >
-              {/* <Typed
-                className="md:text-5xl sm:text-4xl text-xl font-bold pl-2"
-                strings={["POGI", "GWAPO", "SHEESH", "Ayenz pogi"]}
-                typeSpeed={120}
-                backSpeed={130}
-                loop
-              /> */}
+              <TypeAnimation
+                sequence={[
+                  // Same substring at the start will only be typed out once, initially
+                  "POGI",
+                  1000, // wait 1s before replacing "Mice" with "Hamsters"
+                  "Gwapo",
+                  1000,
+                  "Sobrang Pogi",
+                  1000,
+                  "Sobrang Gwapo",
+                  1000,
+                ]}
+                wrapper="span"
+                speed={50}
+                className=" md:text-5xl sm:text-4xl text-xl font-bold ml-4"
+                repeat={Infinity}
+              />
             </motion.div>
           </div>
           <motion.button
