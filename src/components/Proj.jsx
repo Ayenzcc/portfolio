@@ -19,7 +19,7 @@ const Proj = () => {
     <div id="skills" ref={ref} className="w-full py-[10rem] px-4 bg-[#121212]">
       {isInView && (
         <motion.div
-          initial={{ x: -50, opacity: 0 }}
+          initial={{ x: -1000, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ ease: "easeOut", duration: 1 }}
           className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8"
@@ -34,6 +34,7 @@ const Proj = () => {
           </div>
           <div className="w-[100%] "> </div>
           <div className="w-[100%] "> </div>
+
           <motion.div
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
