@@ -72,8 +72,33 @@ const Hero = () => {
           transition={{ ease: "easeOut", duration: 1 }}
           className=" flex w-[50%] items-center justify-center"
         >
-          <img className="" src="/hi-b.JPG" />
+          <img className="rounded-b-[6000px]" src="/hi.png" />
         </motion.div>
+      </div>
+
+      <div
+        className="absolute xs:bottom-10 bottom-2 w-full 
+          flex justify-center items-center "
+      >
+        <a href="#skills">
+          <div
+            className="  w-[35px] h-[64px] rounded-3xl border-4 
+            border-french border-dim 
+            justify-center items-start p-2 hidden md:block"
+          >
+            <motion.div
+              animate={{
+                y: [0, 24, 0],
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              className="w-3 h-3 rounded-full bg-white mb-1"
+            />
+          </div>
+        </a>
       </div>
     </div>
   );

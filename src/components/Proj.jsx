@@ -39,6 +39,7 @@ const Proj = () => {
             src={Rendered}
             alt="/"
           />
+
           <motion.h2
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -63,6 +64,7 @@ const Proj = () => {
             src={PS}
             alt="/"
           />
+
           <motion.h2
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
