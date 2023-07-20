@@ -14,7 +14,7 @@ const Proj = () => {
         initial={{ x: -1000, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ ease: "easeOut", duration: 1 }}
-        className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8"
+        className="max-w-[1240px] mx-auto grid md:grid-cols-3"
       >
         <div className="w-[100%]">
           <h1 className=" flex flex-row max-w-[1240px] mx-auto text-white text-5xl font-bold py-0">

@@ -74,35 +74,34 @@ const Hero = () => {
         >
           <img className="" src="/gradient.png" />
         </motion.div>
-      </div>
-
-      <motion.div
-        initial={{ x: -50, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ ease: "easeOut", duration: 2 }}
-        className="absolute xs:bottom-8 bottom-4 w-full 
+        <motion.div
+          initial={{ x: -50, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+          className="absolute xs:bottom-8 bottom-4 w-full 
           flex justify-center items-center "
-      >
-        <a href="#skills">
-          <div
-            className="  w-[35px] h-[64px] rounded-3xl border-4 
+        >
+          <a href="#skills">
+            <div
+              className="  w-[35px] h-[64px] rounded-3xl border-4 
             border-french border-[#00df9a] 
             justify-center items-start p-2 hidden md:block"
-          >
-            <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-              className="w-3 h-3 rounded-full bg-white mb-1"
-            />
-          </div>
-        </a>
-      </motion.div>
+            >
+              <motion.div
+                animate={{
+                  y: [0, 24, 0],
+                }}
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
+                  repeatType: "loop",
+                }}
+                className="w-3 h-3 rounded-full bg-white mb-1"
+              />
+            </div>
+          </a>
+        </motion.div>
+      </div>
     </div>
   );
 };
