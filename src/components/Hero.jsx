@@ -72,7 +72,7 @@ const Hero = () => {
           transition={{ ease: "easeOut", duration: 1.75 }}
           className=" flex w-[50%] items-center justify-center"
         >
-          <img className="rounded-b-[6000px]" src="/hi.png" />
+          <img className="" src="/gradient.png" />
         </motion.div>
       </div>
 
