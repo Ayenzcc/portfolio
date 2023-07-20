@@ -83,7 +83,7 @@ const Hero = () => {
         <a href="#skills">
           <div
             className="  w-[35px] h-[64px] rounded-3xl border-4 
-            border-french border-dim 
+            border-french border-[#00df9a] 
             justify-center items-start p-2 hidden md:block"
           >
             <motion.div

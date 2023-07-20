@@ -33,17 +33,20 @@ const Navbar = () => {
           <h1 className="w-full text-3xl font-bold text-[#00df9a] m-4">
             LOGO.
           </h1>
-          <ul className="p-4 uppercase">
-            <li className="p-4 border-b border-gray-600 font-bold">Home</li>
+          <ul className=" flex  flex-col p-4 uppercase">
+            <a className="p-4 border-b border-gray-600 font-bold">Home</a>
             <a
+              onClick={() => {
+                setNav(false);
+              }}
               href="#skills"
-              className="p-4 border-b border-gray-600 font-bold"
+              className=" p-4 border-b border-gray-600 font-bold"
             >
               Skills
             </a>
-            <li className="p-4 border-b border-gray-600 font-bold">Projects</li>
-            <li className="p-4 border-b border-gray-600 font-bold">About</li>
-            <li className="p-4 font-bold">Contact Me</li>
+            <a className="p-4 border-b border-gray-600 font-bold">Projects</a>
+            <a className="p-4 border-b border-gray-600 font-bold">About</a>
+            <a className="p-4 font-bold">Contact Me</a>
           </ul>
         </div>
       </div>
