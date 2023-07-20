@@ -80,7 +80,7 @@ const Hero = () => {
         initial={{ x: -50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ ease: "easeOut", duration: 2 }}
-        className="absolute xs:bottom-10 bottom-2 w-full 
+        className="absolute xs:bottom-8 bottom-4 w-full 
           flex justify-center items-center "
       >
         <a href="#skills">
