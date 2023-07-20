@@ -10,7 +10,7 @@ const Hero = () => {
           <motion.p
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ ease: "easeOut", duration: 0.25 }}
+            transition={{ ease: "easeOut", duration: 0.5 }}
             className="text-[#00df9a] font-bold p-2"
           >
             A Computer Science Student at Cavite State University - Main
@@ -18,7 +18,7 @@ const Hero = () => {
           <motion.h1
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ ease: "easeOut", duration: 0.5 }}
+            transition={{ ease: "easeOut", duration: 0.75 }}
             className="md:text-7xl sm:text-6xl text-6xl font-bold md: py-6 "
           >
             Rod Cotines
@@ -27,15 +27,15 @@ const Hero = () => {
             <motion.p
               initial={{ x: -50, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              transition={{ ease: "easeOut", duration: 0.75 }}
+              transition={{ ease: "easeOut", duration: 1 }}
               className="md:text-5xl sm:text-4xl text-xl font-bold py-4"
             >
               AKA
             </motion.p>
             <motion.div
-              initial={{ x: -50, opacity: 0 }}
+              initial={{ x: -50, opacity: 1.25 }}
               animate={{ x: 0, opacity: 1 }}
-              transition={{ ease: "easeOut", duration: 1 }}
+              transition={{ ease: "easeOut", duration: 2 }}
             >
               <TypeAnimation
                 sequence={[
@@ -59,7 +59,7 @@ const Hero = () => {
           <motion.button
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ ease: "easeOut", duration: 1 }}
+            transition={{ ease: "easeOut", duration: 1.5 }}
             whileHover={{ scale: "1", opacity: "5" }}
             className="bg-[#00df9a] w-[150px] rounded-md font-bold my-6 mx-auto py-3 text-black text-[15px] uppercase "
           >
@@ -69,14 +69,17 @@ const Hero = () => {
         <motion.div
           initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ ease: "easeOut", duration: 1 }}
+          transition={{ ease: "easeOut", duration: 1.75 }}
           className=" flex w-[50%] items-center justify-center"
         >
           <img className="rounded-b-[6000px]" src="/hi.png" />
         </motion.div>
       </div>
 
-      <div
+      <motion.div
+        initial={{ x: -50, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 2 }}
         className="absolute xs:bottom-10 bottom-2 w-full 
           flex justify-center items-center "
       >
@@ -99,7 +102,7 @@ const Hero = () => {
             />
           </div>
         </a>
-      </div>
+      </motion.div>
     </div>
   );
 };

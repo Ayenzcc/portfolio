@@ -12,7 +12,6 @@ const Navbar = () => {
       <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white ">
         <h1 className="w-full text-3xl font-bold text-[#00df9a]">LOGO.</h1>
         <ul className="hidden md:flex">
-          <li className="p-4 font-bold">Home</li>
           <a href="#skills" className="p-4 font-bold">
             Skills
           </a>
@@ -34,7 +33,6 @@ const Navbar = () => {
             LOGO.
           </h1>
           <ul className=" flex  flex-col p-4 uppercase">
-            <a className="p-4 border-b border-gray-600 font-bold">Home</a>
             <a
               onClick={() => {
                 setNav(false);
