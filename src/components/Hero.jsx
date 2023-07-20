@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <div className="text-white ">
-      <div className=" max-w-[1000px] pt-[-96px] w-full h-screen mx-auto text-center flex flex-row justify-center">
+      <div className=" max-w-[1000px] pt-[-96px] w-full h-screen mx-auto text-center flex flex-col-reverse md:flex-row justify-center items-center">
         <div className="flex w-[50%] items-center justify-center flex-col">
           <motion.p
             initial={{ x: -50, opacity: 0 }}
@@ -19,7 +19,7 @@ const Hero = () => {
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ ease: "easeOut", duration: 0.5 }}
-            className="md:text-7xl sm:text-6xl text-4xl font-bold md: py-6 "
+            className="md:text-7xl sm:text-6xl text-6xl font-bold md: py-6 "
           >
             Rod Cotines
           </motion.h1>
