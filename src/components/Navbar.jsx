@@ -43,7 +43,7 @@ const Navbar = () => {
             </a>
             <li className="p-4 border-b border-gray-600 font-bold">Projects</li>
             <li className="p-4 border-b border-gray-600 font-bold">About</li>
-            <li className="p-4 font-bold">Contact</li>
+            <li className="p-4 font-bold">Contact Me</li>
           </ul>
         </div>
       </div>
