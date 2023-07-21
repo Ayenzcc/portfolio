@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <div className="text-white ">
-      <div className=" max-w-[1240px] pt-[-96px] w-full h-screen mx-auto text-center flex flex-col-reverse md:flex-row justify-center items-center">
-        <div className="flex w-[50%] items-center justify-center flex-col">
+      <div className=" max-w-[1240px] pt-[-96px] w-full h-screen mx-auto text-center flex flex-col-reverse md:flex-row justify-center items-center ">
+        <div className="flex w-[50%] text-left flex-col sm:pl-5">
           <motion.p
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -23,45 +23,39 @@ const Hero = () => {
           >
             Rod Cotines
           </motion.h1>
-          <div className="flex justify-center items-center">
-            <motion.p
-              initial={{ x: -50, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ ease: "easeOut", duration: 1 }}
-              className="md:text-5xl sm:text-4xl text-xl font-bold py-4"
-            >
-              AKA
-            </motion.p>
-            <motion.div
-              initial={{ x: -50, opacity: 1.25 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ ease: "easeOut", duration: 2 }}
-            >
-              <TypeAnimation
-                sequence={[
-                  // Same substring at the start will only be typed out once, initially
-                  "POGI",
-                  1000, // wait 1s before replacing "Mice" with "Hamsters"
-                  "Gwapo",
-                  1000,
-                  "Sobrang Pogi",
-                  1000,
-                  "Sobrang Gwapo",
-                  1000,
-                ]}
-                wrapper="span"
-                speed={50}
-                className=" md:text-5xl sm:text-4xl text-xl font-bold ml-4"
-                repeat={Infinity}
-              />
-            </motion.div>
-          </div>
+
+          <motion.p
+            initial={{ x: -50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ ease: "easeOut", duration: 1 }}
+            className="md:text-5xl sm:text-4xl text-xl font-bold py-4"
+          >
+            AKA
+            <TypeAnimation
+              sequence={[
+                // Same substring at the start will only be typed out once, initially
+                "POGI",
+                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                "Gwapo",
+                1000,
+                "Sobrang Pogi",
+                1000,
+                "Sobrang Gwapo",
+                1000,
+              ]}
+              wrapper="span"
+              speed={50}
+              className=" md:text-5xl sm:text-4xl text-xl font-bold ml-4"
+              repeat={Infinity}
+            />
+          </motion.p>
+
           <motion.button
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ ease: "easeOut", duration: 1.5 }}
             whileHover={{ scale: "1", opacity: "5" }}
-            className="bg-[#00df9a] w-[150px] rounded-md font-bold my-6 mx-auto py-3 text-black text-[15px] uppercase "
+            className="bg-[#00df9a] w-[150px] rounded-md font-bold my-6 py-3 text-black text-[15px] uppercase "
           >
             Contact Me
           </motion.button>
