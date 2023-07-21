@@ -1,178 +1,51 @@
 import React, { useEffect } from "react";
-import Rendered from "/blender.png";
-import Animate from "/Animate.png";
-import PR from "/PR.png";
-import PS from "/PS.png";
-import WEB from "/web.webp";
-import Prog from "/Prog.webp";
+import Rendered from "../assets/Rendered.png";
 import { motion } from "framer-motion";
 
 const Proj = () => {
   return (
-    <div id="skills" className="w-full py-[10rem] px-4 bg-[#121212]">
+    <div id="proj" className="w-full  bg-[#0B0C10] py-16  px-4">
       <motion.div
-        initial={{ x: -1000, opacity: 0 }}
+        initial={{ x: -50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ ease: "easeOut", duration: 1 }}
-        className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8"
+        className="max-w-[1240px] mx-auto grid md:grid-cols-2"
       >
-        <div className="w-[100%]">
-          <h1 className=" flex flex-row max-w-[1240px] mx-auto text-white text-5xl font-bold py-0">
-            <h1 className="flex text-[#00df9a] ">──</h1> &nbsp;&nbsp;Skills
-          </h1>
-          <h1 className=" text-[#00df9a] max-w-[1240px] mx-auto text-1xl font-bold py-8 uppercase">
-            My services for clients
-          </h1>
+        <img
+          className="w-[500px] mx-auto my-4 rounded-md"
+          src={Rendered}
+          alt="/"
+        />
+
+        <div className=" flex flex-col justify-center ">
+          <motion.p
+            initial={{ x: -50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ ease: "easeOut", duration: 1, delay: 0.25 }}
+            className="text-[#00df9a] uppercase font-bold"
+          >
+            Blender Project
+          </motion.p>
+          <motion.h1
+            initial={{ x: -50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ ease: "easeOut", duration: 1, delay: 0.5 }}
+            className=" text-white md:text-4xl mx:py-2 sm:text-3xl text-2xl font-bold py-2"
+          >
+            This is my First Blender Project
+          </motion.h1>
+          <motion.p
+            initial={{ x: -50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ ease: "easeOut", duration: 1, delay: 0.75 }}
+            className="text-white"
+          >
+            lorem ipsum dolor sit, anet consectur adisicpin elit. dicta beateae
+            monis obcasetu aliquan, quidasde et elgiegeni offcia atque quan
+            corrutoi conequartur commodi mollitia non, assumenda aliqed hic at
+            possimus nijil?
+          </motion.p>
         </div>
-        <div className="w-[100%] "> </div>
-        <div className="w-[100%] "> </div>
-
-        <motion.div
-          initial={{ x: -50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ ease: "easeOut", duration: 0.3 }}
-          whileHover={{ scale: "1.05", opacity: "3", duration: 1 }}
-          className="w-full h-64 shadow-md shadow-[#00df9a] flex flex-col p-4 my-4 "
-        >
-          <img
-            className="w-20 h-20 mx-auto mt-[-3rem] rounded-md "
-            src={Rendered}
-            alt="/"
-          />
-
-          <motion.h2
-            initial={{ x: -50, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ ease: "easeOut", duration: 0.3 }}
-            className=" text-white text-2xl font-bold text-center py-8"
-          >
-            Blender
-          </motion.h2>
-          <h2 className=" text-center text-white font-medium text-base">
-            3d Modeling | Isometric Design | Animation
-          </h2>
-        </motion.div>
-        <motion.div
-          initial={{ x: -50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ ease: "easeOut", duration: 0.6 }}
-          whileHover={{ scale: "1.05", opacity: "3", duration: 1 }}
-          className="w-full h-64 shadow-md shadow-[#00df9a] flex flex-col p-4 my-4 "
-        >
-          <img
-            className="w-20 h-20 mx-auto mt-[-3rem] rounded-md "
-            src={PS}
-            alt="/"
-          />
-
-          <motion.h2
-            initial={{ x: -50, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ ease: "easeOut", duration: 0.6 }}
-            className=" text-white text-2xl font-bold text-center py-8"
-          >
-            Adobe Photoshop
-          </motion.h2>
-          <h2 className=" text-center text-white font-medium text-base">
-            Photo Editing | Image Creation | Graphic Layout Design
-          </h2>
-        </motion.div>
-        <motion.div
-          initial={{ x: -50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ ease: "easeOut", duration: 0.9 }}
-          whileHover={{ scale: "1.05", opacity: "3", duration: 1 }}
-          className="w-full h-64 shadow-md shadow-[#00df9a] flex flex-col p-4 my-4 "
-        >
-          <img
-            className="w-20 h-20 mx-auto mt-[-3rem] rounded-md "
-            src={Animate}
-            alt="/"
-          />
-          <motion.h2
-            initial={{ x: -50, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ ease: "easeOut", duration: 0.9 }}
-            className=" text-white text-2xl font-bold text-center py-8"
-          >
-            Adobe Animate
-          </motion.h2>
-          <h2 className=" text-center text-white font-medium text-base">
-            Simple to Medium Animation with Sound Effects
-          </h2>
-        </motion.div>
-        <motion.div
-          initial={{ x: -50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ ease: "easeOut", duration: 1.2 }}
-          whileHover={{ scale: "1.05", opacity: "3", duration: 1 }}
-          className="w-full h-64 shadow-md shadow-[#00df9a] flex flex-col p-4 my-4 "
-        >
-          <img
-            className="w-20 h-20 mx-auto mt-[-3rem] rounded-md "
-            src={PR}
-            alt="/"
-          />
-          <motion.h2
-            initial={{ x: -50, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ ease: "easeOut", duration: 1.2 }}
-            className=" text-white text-2xl font-bold text-center py-8"
-          >
-            Adobe Premiere Pro
-          </motion.h2>
-          <h2 className=" text-center text-white font-medium text-base">
-            Video Editing
-          </h2>
-        </motion.div>
-        <motion.div
-          initial={{ x: -50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ ease: "easeOut", duration: 1.5 }}
-          whileHover={{ scale: "1.05", opacity: "3", duration: 1 }}
-          className="w-full h-64 shadow-md shadow-[#00df9a] flex flex-col p-4 my-4 "
-        >
-          <img
-            className="w-20 h-20 mx-auto mt-[-3rem] rounded-md "
-            src={WEB}
-            alt="/"
-          />
-          <motion.h2
-            initial={{ x: -50, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ ease: "easeOut", duration: 1.5 }}
-            className=" text-white text-2xl font-bold text-center py-8"
-          >
-            Web Development
-          </motion.h2>
-          <h2 className=" text-center text-white font-medium text-base">
-            HTML | CSS | JavaScript | MySQL | WordPress | React | Tailwind
-          </h2>
-        </motion.div>
-        <motion.div
-          initial={{ x: -50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ ease: "easeOut", duration: 1.8 }}
-          whileHover={{ scale: "1.05", opacity: "3", duration: 1 }}
-          className="w-full h-64 shadow-md shadow-[#00df9a] flex flex-col p-4 my-4 "
-        >
-          <img
-            className="w-20 h-20 mx-auto mt-[-3rem] rounded-md "
-            src={Prog}
-            alt="/"
-          />
-          <motion.h2
-            initial={{ x: -50, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ ease: "easeOut", duration: 1.8 }}
-            className=" text-white text-2xl font-bold text-center py-8"
-          >
-            Programming
-          </motion.h2>
-          <h2 className=" text-center text-white font-medium text-base">
-            Java | Python | JavaScript
-          </h2>
-        </motion.div>
       </motion.div>
     </div>
   );
