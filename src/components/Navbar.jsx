@@ -44,7 +44,15 @@ const Navbar = () => {
             >
               Skills
             </a>
-            <a className="p-4 border-b border-gray-600 font-bold">Projects</a>
+            <a
+              onClick={() => {
+                setNav(false);
+              }}
+              href="#proj"
+              className=" p-4 border-b border-gray-600 font-bold"
+            >
+              Projects
+            </a>
             <a className="p-4 border-b border-gray-600 font-bold">About</a>
             <a className="p-4 font-bold">Contact Me</a>
           </ul>
