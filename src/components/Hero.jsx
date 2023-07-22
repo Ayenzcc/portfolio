@@ -54,24 +54,27 @@ const Hero = () => {
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ ease: "easeOut", duration: 1.5 }}
-            whileHover={{ scale: "1", opacity: "5" }}
-            className="bg-[#00df9a] w-[150px] rounded-md font-bold my-6 py-3 text-black text-[15px] uppercase "
+            className="text-white hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300  text-sm px-5  text-center mr-2 mb-2 dark:border-[#00df9a] dark:text-[#00df9a] dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800 w-[150px] rounded-md font-bold my-6 py-3  text-[15px] uppercase hover:"
           >
             Contact Me
           </motion.button>
         </div>
         <motion.div
-          initial={{ x: -50, opacity: 0 }}
+          initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ ease: "easeOut", duration: 1.75 }}
+          transition={{ ease: "easeOut", duration: 1.25 }}
           className=" flex w-[50%] items-center justify-center"
         >
           <img className="" src="/gradient.png" />
         </motion.div>
         <motion.div
-          initial={{ x: -50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ ease: "easeOut", duration: 2 }}
+          initial={{ rotate: -540, scale: 0, opacity: 0 }}
+          animate={{
+            rotate: 0,
+            scale: 1,
+            opacity: 1,
+            transition: { duration: 1 },
+          }}
           className="absolute xs:bottom-8 bottom-4 w-full 
           flex justify-center items-center "
         >
