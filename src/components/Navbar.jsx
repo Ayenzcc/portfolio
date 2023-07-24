@@ -80,8 +80,9 @@ const Navbar = () => {
             <a href="#proj" className="p-4 font-bold hover:text-[#00df9a]">
               Projects
             </a>
-            <li className="p-4 font-bold">About</li>
-            <li className="p-4 font-bold">Contact</li>
+            <a href="#aboutme" className="p-4 font-bold hover:text-[#00df9a]">
+              About
+            </a>
           </ul>
         </div>
         <div onClick={handleNav} className="block md:hidden">
@@ -92,6 +93,15 @@ const Navbar = () => {
             nav
               ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500 "
               : "fixed left-[-100%]"
+          }
+          style={
+            show || window.scrollY === 0
+              ? {
+                  transform: "translate(-0%)",
+                }
+              : {
+                  transform: "translate(-500px )",
+                }
           }
         >
           <h1 className="w-full text-3xl font-bold text-[#00df9a] m-4">
@@ -116,8 +126,15 @@ const Navbar = () => {
             >
               Projects
             </a>
-            <a className="p-4 border-b border-gray-600 font-bold">About</a>
-            <a className="p-4 font-bold">Contact Me</a>
+            <a
+              onClick={() => {
+                setNav(false);
+              }}
+              href="#aboutme"
+              className="p-4 font-bold hover:text-[#00df9a]"
+            >
+              About
+            </a>
           </ul>
         </div>
       </div>

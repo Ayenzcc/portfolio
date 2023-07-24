@@ -28,7 +28,7 @@ const Hero = () => {
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ ease: "easeOut", duration: 1 }}
-            className="md:text-5xl sm:text-4xl text-xl font-bold py-4"
+            className="md:text-4xl sm:text-3xl text-xl font-bold py-4"
           >
             Aspiring
             <TypeAnimation
@@ -41,19 +41,20 @@ const Hero = () => {
               ]}
               wrapper="span"
               speed={50}
-              className=" md:text-5xl sm:text-4xl text-xl font-bold ml-4"
+              className=" md:text-4xl sm:text-3xl text-xl font-bold pl-2"
               repeat={Infinity}
             />
           </motion.p>
-
-          <motion.button
-            initial={{ x: -50, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ ease: "easeOut", duration: 1.5 }}
-            className="text-white hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300  text-sm px-5  text-center mr-2 mb-2 dark:border-[#00df9a] dark:text-[#00df9a] dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800 w-[150px] rounded-md font-bold my-6 py-3  text-[15px] uppercase hover:"
-          >
-            Contact Me
-          </motion.button>
+          <a href="#aboutme">
+            <motion.button
+              initial={{ x: -50, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ ease: "easeOut", duration: 1.5 }}
+              className="text-white hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300  text-sm px-5  text-center mr-2 mb-2 dark:border-[#00df9a] dark:text-[#00df9a] dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800 w-[150px] rounded-md font-bold my-6 py-3  text-[15px] uppercase hover:"
+            >
+              Contact Me
+            </motion.button>
+          </a>
         </div>
         <motion.div
           initial={{ x: 100, opacity: 0 }}
