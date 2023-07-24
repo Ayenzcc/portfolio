@@ -59,7 +59,7 @@ const Navbar = () => {
                 }
           }
         >
-          <h1 className="w-full text-3xl font-bold text-[#00df9a]">LOGO.</h1>
+          <h1 className="w-full text-3xl font-bold text-[#00df9a]">RC.</h1>
         </div>
         <div
           className="transition-all ease-in-out  duration-[0.5s]"
@@ -104,9 +104,7 @@ const Navbar = () => {
                 }
           }
         >
-          <h1 className="w-full text-3xl font-bold text-[#00df9a] m-4">
-            LOGO.
-          </h1>
+          <h1 className="w-full text-3xl font-bold text-[#00df9a] m-4">RC.</h1>
           <ul className=" flex  flex-col p-4 uppercase">
             <a
               onClick={() => {
