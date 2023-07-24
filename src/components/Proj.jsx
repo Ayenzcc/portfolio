@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Rendered from "../assets/Rendered.png";
+import Rendered from "../assets/Room.png";
 import { motion } from "framer-motion";
 
 const Proj = () => {
@@ -40,10 +40,9 @@ const Proj = () => {
             transition={{ ease: "easeOut", duration: 1, delay: 0.75 }}
             className="text-white"
           >
-            lorem ipsum dolor sit, anet consectur adisicpin elit. dicta beateae
-            monis obcasetu aliquan, quidasde et elgiegeni offcia atque quan
-            corrutoi conequartur commodi mollitia non, assumenda aliqed hic at
-            possimus nijil?
+            This Isometric Gaming Room is my first blender project out of
+            projects in schools. This is inspired by my own set up and my own
+            room.
           </motion.p>
         </div>
       </motion.div>

@@ -30,18 +30,14 @@ const Hero = () => {
             transition={{ ease: "easeOut", duration: 1 }}
             className="md:text-5xl sm:text-4xl text-xl font-bold py-4"
           >
-            AKA
+            Aspiring
             <TypeAnimation
               sequence={[
                 // Same substring at the start will only be typed out once, initially
-                "POGI",
-                1000, // wait 1s before replacing "Mice" with "Hamsters"
-                "Gwapo",
-                1000,
-                "Sobrang Pogi",
-                1000,
-                "Sobrang Gwapo",
-                1000,
+                "Web Developer",
+                2000, // wait 1s before replacing "Mice" with "Hamsters"
+                "Software Engr.",
+                2000,
               ]}
               wrapper="span"
               speed={50}
