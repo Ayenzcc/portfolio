@@ -43,7 +43,7 @@ const Aboutme = () => {
           <div className="flex flex-row lg:flex-col justify-between items-center gap-y-[1rem] w-full lg:w-auto">
             <div className="flex flex-col items-center">
               <p className="font-bold text-accent text-5xl text-[#00df9a] pb-2">
-                •Contacts
+                Contacts
               </p>
               <a className="pb-2" href="https://facebook.com/ayenzc">
                 <svg
