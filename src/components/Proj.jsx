@@ -41,8 +41,8 @@ const Proj = () => {
             className="text-white"
           >
             This Isometric Gaming Room is my first blender project out of
-            projects in schools. This is inspired by my own set up and my own
-            room.
+            projects in schools. This is also inspired by my own set up and my
+            own room.
           </motion.p>
         </div>
       </motion.div>
