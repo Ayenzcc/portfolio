@@ -18,7 +18,7 @@ const Hero = () => {
           <motion.h1
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ ease: "easeOut", duration: 0.75 }}
+            transition={{ ease: "easeOut", duration: 0.76 }}
             className="md:text-7xl sm:text-6xl text-6xl font-bold md: py-6 "
           >
             Rod Cotines
