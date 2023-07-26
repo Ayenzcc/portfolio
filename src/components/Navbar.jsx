@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { motion } from "framer-motion";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [show, setShow] = useState(true);
@@ -49,17 +50,23 @@ const Navbar = () => {
       <div className=" flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white  ">
         <div
           className=" transition-all ease-in-out  duration-[0.5s]"
-          style={
-            show || window.scrollY === 0
-              ? {
-                  transform: "translate(-0%)",
-                }
-              : {
-                  transform: "translate(-500px )",
-                }
-          }
+          style={{
+            transform:
+              show || window.scrollY === 0
+                ? "translate(-0%)"
+                : "translate(-500px )",
+          }}
         >
-          <h1 className="w-full text-3xl font-bold text-[#00df9a]">RC.</h1>
+          <motion.img
+            initial={{ scale: 0, opacity: 0 }}
+            animate={{
+              scale: 1,
+              opacity: 1,
+              transition: { duration: 1 },
+            }}
+            className=" w-12"
+            src="/RODLOGO.png"
+          />
         </div>
         <div
           className="transition-all ease-in-out  duration-[0.5s]"
@@ -104,14 +111,14 @@ const Navbar = () => {
                 }
           }
         >
-          <h1 className="w-full text-3xl font-bold text-[#00df9a] m-4">RC.</h1>
+          <img className=" w-12 pt-4 ml-4" src="/RODLOGO.png" />
           <ul className=" flex  flex-col p-4 uppercase">
             <a
               onClick={() => {
                 setNav(false);
               }}
               href="#skills"
-              className=" p-4 border-b border-gray-600 font-bold"
+              className=" p-4 border-b border-gray-600 font-bold hover:text-[#00df9a]"
             >
               Skills
             </a>
@@ -120,7 +127,7 @@ const Navbar = () => {
                 setNav(false);
               }}
               href="#proj"
-              className=" p-4 border-b border-gray-600 font-bold"
+              className=" p-4 border-b border-gray-600 font-bold hover:text-[#00df9a]"
             >
               Projects
             </a>
