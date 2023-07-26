@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Rendered from "/blender.png";
-import Animate from "/Animate.png";
+import Godot from "/Godottt.png";
 import PR from "/PR.png";
 import PS from "/PS.png";
 import WEB from "/web.webp";
@@ -86,7 +86,7 @@ const Skills = () => {
         >
           <img
             className="w-20 h-20 mx-auto mt-[-3rem] rounded-md "
-            src={Animate}
+            src={Godot}
             alt="/"
           />
           <motion.h2
@@ -95,10 +95,10 @@ const Skills = () => {
             transition={{ ease: "easeOut", duration: 0.9 }}
             className=" text-white text-2xl font-bold text-center py-8"
           >
-            Adobe Animate
+            Godot
           </motion.h2>
           <h2 className=" text-center text-white font-medium text-base">
-            Simple to Medium Animation with Sound Effects
+            Simple 2d & 3d Game Development
           </h2>
         </motion.div>
         <motion.div
