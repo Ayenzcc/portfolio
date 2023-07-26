@@ -30,7 +30,7 @@ const Hero = () => {
             transition={{ ease: "easeOut", duration: 1 }}
             className="md:text-4xl sm:text-3xl text-xl font-bold py-4"
           >
-            Aspiring
+            A
             <TypeAnimation
               sequence={[
                 // Same substring at the start will only be typed out once, initially
