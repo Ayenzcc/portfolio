@@ -57,13 +57,13 @@ const Navbar = () => {
                 : "translate(-500px )",
           }}
         >
-          <motion.img
-            initial={{ scale: 0, opacity: 0 }}
-            animate={{
-              scale: 1,
-              opacity: 1,
-              transition: { duration: 1 },
-            }}
+          <img
+            // initial={{ scale: 0, opacity: 0 }}
+            // animate={{
+            //   scale: 1,
+            //   opacity: 1,
+            //   transition: { duration: 1 },
+            // }}
             className=" w-12"
             src="/RODLOGO.png"
           />
