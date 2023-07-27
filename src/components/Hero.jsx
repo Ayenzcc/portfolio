@@ -18,7 +18,7 @@ const Hero = () => {
           <motion.h1
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ ease: "easeOut", duration: 0.76 }}
+            transition={{ ease: "easeOut", duration: 0.75 }}
             className="md:text-7xl sm:text-6xl text-6xl font-bold md: py-6 "
           >
             Rod Cotines
@@ -49,7 +49,7 @@ const Hero = () => {
             <motion.button
               initial={{ x: -50, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              transition={{ ease: "easeOut", duration: 1.5 }}
+              transition={{ ease: "easeOut", duration: 1.25 }}
               className="text-white hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300  text-sm px-5  text-center mr-2 mb-2 dark:border-[#00df9a] dark:text-[#00df9a] dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800 w-[150px] rounded-md font-bold my-6 py-3  text-[15px] uppercase hover:"
             >
               Contact Me
@@ -59,7 +59,7 @@ const Hero = () => {
         <motion.div
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ ease: "easeOut", duration: 1.25 }}
+          transition={{ ease: "easeOut", duration: 1.5 }}
           className=" flex w-[50%] items-center justify-center"
         >
           <img className="" src="/gradient.png" />
