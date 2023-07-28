@@ -4,7 +4,7 @@ const Aboutme = () => {
   return (
     <section
       id="aboutme"
-      className="w-full h-auto flex items-center justify-center relative overflow-hidden py-[10rem]"
+      className="w-full h-auto flex items-center justify-center relative overflow-hidden py-[5rem]"
     >
       <div className="h-full flex flex-col gap-y-[1rem] justify-center items-center w-full px-[2rem] md:px-[4.5rem] lg:px-[7rem] lg:max-w-[100rem]">
         {/* SECTION TITLE */}
@@ -37,12 +37,12 @@ const Aboutme = () => {
             </p>
           </div>
 
-          <hr className="lg:hidden border-l-[1px] border-secondary w-full" />
-          <div className="hidden lg:block h-[13rem] border-l-[1px] border-secondary" />
+          <hr className=" border-[#00df9a] lg:hidden border-l-[1px] border-secondary w-full " />
+          <div className=" border-[#00df9a] hidden lg:block h-[13rem] border-l-[1px] border-secondary" />
 
           <div className="flex flex-row lg:flex-col justify-between items-center gap-y-[1rem] w-full lg:w-auto">
             <div className="flex flex-col items-center">
-              <p className="font-bold text-accent text-5xl text-[#00df9a] pb-2">
+              {/* <p className="font-bold text-accent text-5xl text-[#00df9a] pb-2">
                 Contacts
               </p>
               <a className="pb-2" href="https://facebook.com/ayenzc">
@@ -94,7 +94,7 @@ const Aboutme = () => {
                 >
                   <path d="m18.73 5.41-1.28 1L12 10.46 6.55 6.37l-1.28-1A2 2 0 0 0 2 7.05v11.59A1.36 1.36 0 0 0 3.36 20h3.19v-7.72L12 16.37l5.45-4.09V20h3.19A1.36 1.36 0 0 0 22 18.64V7.05a2 2 0 0 0-3.27-1.64z" />
                 </svg>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
