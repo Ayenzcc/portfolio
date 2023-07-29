@@ -60,7 +60,7 @@ const Hero = () => {
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ ease: "easeOut", duration: 1.5 }}
-          className=" flex w-[50%] items-center justify-center"
+          className=" flex w-[50%] items-center justify-center hidden md:block"
         >
           <img className="" src="/gradient.png" />
         </motion.div>
