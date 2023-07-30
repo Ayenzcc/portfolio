@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
@@ -86,6 +87,28 @@ const Footer = () => {
                 <path d="m18.73 5.41-1.28 1L12 10.46 6.55 6.37l-1.28-1A2 2 0 0 0 2 7.05v11.59A1.36 1.36 0 0 0 3.36 20h3.19v-7.72L12 16.37l5.45-4.09V20h3.19A1.36 1.36 0 0 0 22 18.64V7.05a2 2 0 0 0-3.27-1.64z" />
               </svg>
             </a>
+          </div>
+        </div>
+        <hr className=" flex border-[#00df9a] border-[1px] w-[100%] lg:w-[100%]" />
+        <div className=" flex  w-full text-white font-bold">
+          <h1 className="w-[50%]">© 2023 Rod Cotines</h1>
+          <div className="flex flex-row w-[50%] items-end justify-end">
+            <a className="" href="#hero">
+              BACK TO TOP
+            </a>
+            <motion.a
+              animate={{
+                y: [0, -12, 0],
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              className="pl-2"
+            >
+              ↑
+            </motion.a>
           </div>
         </div>
       </div>

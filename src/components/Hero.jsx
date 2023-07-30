@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="text-white ">
+    <div id="hero" className="text-white ">
       <div className=" max-w-[1240px] pt-[-96px] w-full h-screen mx-auto text-center flex flex-col-reverse md:flex-row justify-center items-center ">
         <div className="flex w-[50%] text-left flex-col sm:pl-5">
           <motion.p
