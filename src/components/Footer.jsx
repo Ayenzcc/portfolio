@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <div className="w-full h-auto flex items-center justify-center  overflow-hidden py-[4rem] bg-[#0B0C10] ">
-      <div className=" w-[1240px] h-full flex flex-col gap-y-[1rem] justify-center items-center px-[2rem] md:px-[4.5rem] lg:px-[7rem] lg:max-w-[100rem]  ">
+    <div className="w-full flex items-center justify-center  overflow-hidden bg-[#0B0C10] ">
+      <div className=" w-full h-full flex flex-col gap-y-[1rem] justify-center items-center px-[2rem] md:px-[4.5rem] lg:px-[7rem] lg:max-w-[100rem]  ">
         <div className="flex gap-x-[1.5rem] md:w-full">
           <h1 className="text-white text-5xl font-bold lg:4xl whitespace-nowrap ">
             Rod Cotines
@@ -90,7 +90,7 @@ const Footer = () => {
           </div>
         </div>
         <hr className=" flex border-[#00df9a] border-[1px] w-[100%] lg:w-[100%]" />
-        <div className=" flex  w-full text-white font-bold">
+        <footer className=" flex  w-full text-white font-bold  ">
           <h1 className="w-[50%]">© 2023 Rod Cotines</h1>
           <div className="flex flex-row w-[50%] items-end justify-end">
             <a className="" href="#hero">
@@ -105,12 +105,12 @@ const Footer = () => {
                 repeat: Infinity,
                 repeatType: "loop",
               }}
-              className="pl-2"
+              className="pl-2 font-bold"
             >
               ↑
             </motion.a>
           </div>
-        </div>
+        </footer>
       </div>
     </div>
   );
