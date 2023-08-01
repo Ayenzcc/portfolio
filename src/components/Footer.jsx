@@ -92,7 +92,7 @@ const Footer = () => {
         <hr className=" flex border-[#00df9a] border-[1px] w-[100%] lg:w-[100%]" />
         <footer className=" flex  w-full text-white font-bold p-2 ">
           <h1 className="w-[50%]">© 2023 Rod Cotines</h1>
-          <div className="flex flex-row w-[50%] items-end justify-end">
+          <div className="flex flex-row w-[50%] items-end justify-end hover:text-[#00df9a]">
             <a className="" href="#hero">
               BACK TO TOP
             </a>
@@ -105,7 +105,7 @@ const Footer = () => {
                 repeat: Infinity,
                 repeatType: "loop",
               }}
-              className="pl-2 font-bold"
+              className="pl-2 font-bold "
             >
               ↑
             </motion.a>
